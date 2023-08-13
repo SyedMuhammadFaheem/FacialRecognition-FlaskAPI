@@ -10,6 +10,10 @@ KnownEncodeList=[]
 
 app = Flask(__name__)
 
+@app.route('/', methods=['GET'])
+def root():
+    return jsonify({"message": "Hello World"})
+
 @app.route('/upload_image_and_user', methods=['POST'])
 def upload_image_and_user():
     user_id = request.form.get('user_id')
