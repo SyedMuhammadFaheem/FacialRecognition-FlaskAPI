@@ -143,7 +143,6 @@ seaborn
 selenium
 Send2Trash
 six
-sklearn
 sniffio
 sortedcontainers
 soupsieve
